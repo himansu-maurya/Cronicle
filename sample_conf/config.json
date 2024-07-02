@@ -1,9 +1,19 @@
 {
 	"base_app_url": "http://localhost:3012",
-	"email_from": "admin@localhost",
-	"smtp_hostname": "localhost",
-	"smtp_port": 25,
-	"secret_key": "CHANGE_ME",
+	"email_from": "support@neuron7.ai",
+        "smtp_hostname": "mail.smtp2go.com",
+        "smtp_port": 587,
+        "mail_options": {
+                "secure": false,
+                "auth": {
+                        "user": "supportn7",
+                        "pass": "SbMXhs38WjdWmUaB"
+                },
+                "connectionTimeout": 10000,
+                "greetingTimeout": 10000,
+                "socketTimeout": 10000
+        },
+        "secret_key": "da958f786cf383fca8781e6de160c1db",
 	
 	"log_dir": "logs",
 	"log_filename": "[component].log",
